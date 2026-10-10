@@ -14,6 +14,8 @@ python -m http.server 8000
 
 ## เผยแพร่ด้วย GitHub Pages
 
-GitHub Actions ใน `.github/workflows/deploy.yml` จะเผยแพร่เว็บเมื่อ push ไปยัง `main` หรือสั่ง workflow ด้วยตนเอง จากนั้นเปิด URL ใน environment `github-pages` ของ workflow ที่สำเร็จ
+เปิด Pages ครั้งแรกที่ repository Settings → Pages → Build and deployment → Source เลือก `GitHub Actions` ก่อน
+
+หลังจากนั้น GitHub Actions ใน `.github/workflows/deploy.yml` จะเผยแพร่เว็บเมื่อ push ไปยัง `main` หรือสั่ง workflow ด้วยตนเอง จากนั้นเปิด URL ใน environment `github-pages` ของ workflow ที่สำเร็จ
 
 ข้อมูลใน Local Storage ผูกกับเบราว์เซอร์และ origin ของเว็บ ไม่ได้ซิงค์ระหว่างอุปกรณ์หรือผู้ใช้คนอื่น และการล้างข้อมูลเว็บไซต์จะลบรายการที่แก้ไขไว้ สำหรับเริ่มจากข้อมูลตัวอย่างอีกครั้ง ให้ลบคีย์ `homework-desk-data-v1` จาก Local Storage ของเว็บไซต์
